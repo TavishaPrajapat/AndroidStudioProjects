@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "182608279961",
+    "project_id": "moviehub-d1a01",
+    "storage_bucket": "moviehub-d1a01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182608279961:android:32346e9287104b9a573b08",
+        "android_client_info": {
+          "package_name": "com.tavisha.moviehub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnMyUptYS6KligHzzdp7z-037T0RyoWh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

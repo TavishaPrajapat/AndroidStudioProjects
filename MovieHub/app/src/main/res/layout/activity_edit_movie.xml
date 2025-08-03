@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editMovieNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Movie Name"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/accent"/>
+
+        <EditText
+            android:id="@+id/editMovieDescriptionET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Movie Description"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/accent"/>
+
+        <EditText
+            android:id="@+id/editMovieReviewET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Movie Review"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/accent"/>
+
+        <RatingBar
+            android:id="@+id/editMovieRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:progressTint="@color/accent"
+            android:secondaryProgressTint="@color/primary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editReleaseDateET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Release Date"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/accent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Genres:"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/editGenreChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chipSpacingHorizontal="8dp"
+            app:chipSpacingVertical="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/updateMovieBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Movie"
+            android:layout_marginTop="16dp"
+            android:background="@color/primary"
+            android:textColor="@color/light_text"/>
+
+        <Button
+            android:id="@+id/deleteMovieBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Movie"
+            android:layout_marginTop="16dp"
+            android:background="@color/primary"
+            android:textColor="@color/light_text"/>
+
+        <Button
+            android:id="@+id/returnToMainBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return to Main Menu"
+            android:layout_marginTop="16dp"
+            android:background="@color/primary"
+            android:textColor="@color/light_text"/>
+
+    </LinearLayout>
+</ScrollView>
+

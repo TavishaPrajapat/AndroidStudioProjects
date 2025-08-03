@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/text_frag770"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loading Friends List..."
+        android:textSize="25sp"
+        android:textColor="#000B58"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <Button
+        android:id="@+id/btn_frag770"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Toast"
+        android:textColor="#FFF4B7"
+        android:backgroundTint="#000B58"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+         />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mytestappone" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#16423C</item>
+        <item name="colorPrimaryContainer">#16423C</item>
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- Text color on primary background -->
+        <item name="colorAccent">#16423C</item>
+        <item name="colorSurface">#C4DAD2</item> <!-- Background color for surfaces -->
+        <item name="colorOnSurface">#000000</item> <!-- Text color on surface backgrounds -->
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Mytestappone" parent="Base.Theme.Mytestappone" />
+</resources>

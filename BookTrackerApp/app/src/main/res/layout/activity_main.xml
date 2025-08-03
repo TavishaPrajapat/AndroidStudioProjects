@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    android:gravity="center_horizontal">
+
+    <!-- Book Title Input -->
+    <EditText
+        android:id="@+id/etBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter book title"
+        android:padding="16dp"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="16sp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Enter the book title"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Book Author Input -->
+    <EditText
+        android:id="@+id/etBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter book author"
+        android:padding="16dp"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="16sp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Enter the book author"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Buttons Row (Horizontal) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <!-- Add Book Button -->
+        <Button
+            android:id="@+id/btnAddBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Book"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorAccent"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Add a new book"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Mark as Read Button -->
+        <Button
+            android:id="@+id/btnMarkRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark as Read"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorAccent"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Mark selected books as read"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"/>
+
+    </LinearLayout>
+    <!-- Delete Book Button -->
+    <Button
+        android:id="@+id/btnDeleteBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Book"
+        android:textColor="@color/textPrimary"
+        android:backgroundTint="@color/colorAccent"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Delete selected books"
+
+        android:padding="10dp"
+        android:textSize="14sp"/>
+
+    <!-- List View for books -->
+    <ListView
+        android:id="@+id/listViewBooks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"/>
+</LinearLayout>
